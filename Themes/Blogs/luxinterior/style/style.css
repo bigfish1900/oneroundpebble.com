@@ -1,0 +1,759 @@
+/*  Luxinterior skin for CS 1.1
+    Author: Jaxon Rice (gosatango)
+	Updates: http://cs.soup.co.za/blogs/cs_skins/articles/3.aspx
+	Email bugs and suggestions to: skins@soup.co.za
+	Community Server: http://www.communityserver.org
+*/
+
+html, body {
+	margin: 0 auto;
+	padding: 0;
+	color: #FFF;
+}
+body {
+	padding: 0;
+	text-align: center;
+	background: #333;
+	font: 76%/1.2em Verdana, Arial, Helvetica, sans-serif;
+}
+a:visited, a:active, a:link {
+	text-decoration: none;
+	color: #F90;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	margin: 0;
+	font-size: 1.5em;
+}
+h1 a:visited, h1 a:active, h1 a:link {
+	color: #FFF;
+}
+h1 a:hover {
+	text-decoration: none;
+}
+h2 {
+	margin-top: 1em;
+	font-size: 1em;
+}
+h3 {
+	font-size: 1.1em;
+}
+p {
+	margin: 1em 0;
+}
+/* -- Layout -- */
+/* The masthead sits at the top of the page.*/
+#masthead {
+	color: #CCC;
+	text-align: right;
+	padding: 0.5em;
+	font-size: 0.9em;
+	border-bottom: 2px solid #666;
+	background: #535353;
+}
+#masthead ul {
+	color: #CCC;
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+}
+#masthead ul li {
+	display: inline;
+}
+#masthead ul li a {
+	padding: 0 0.5em;
+	text-decoration: none;
+	margin: 0;
+}
+#masthead a:link, #masthead a:visited, #masthead a:active, #masthead a:hover {
+	color: #F90;
+	text-decoration: none;
+}
+/* Blog Layout */
+#wrapper {
+	padding: 1em;
+}
+#container {
+	margin: 0 auto;
+	text-align: left;
+	padding: 0;
+	width: 760px;
+}
+/* Blog Header */
+#header {
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Trebuchet MS";
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+#header h1 {
+	margin: 0;
+	padding: 0.5em 1em;
+	font-size: 2em;
+}
+#header p {
+	font-size: 1.1em;
+	margin: 0;
+	padding: 0.5em 1em 1em;
+}
+/* #title is a placeholder div for putting pictures in place of the blog title*/
+#title {}
+
+/* Navigation Bar */
+#nav {
+	text-align: left;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	margin: 0;
+	border-bottom: 1px solid #666;
+}
+#nav ul {
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+}
+#nav ul li {
+	display: inline;
+}
+#nav ul li a {
+	padding: 0.2em 1.2em;
+	text-decoration: none;
+	margin-top: 0;
+	font-weight: bold;
+	margin-bottom: 0.1em;
+}
+/* Subscription Bar */
+#subscriptions {
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+#subscriptions ul {
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+}
+#subscriptions ul li {
+	display: inline;
+}
+#subscriptions ul li a {
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+	margin-top: 0;
+	margin-bottom: 0.1em;
+}
+/* End Navigation*/
+#contentwrapper
+{
+	width: 100%;
+	overflow: hidden;
+}   
+#content {
+	padding: 1em;
+	margin: 0 210px 0 0;
+	height: 1%;
+}
+#content2 
+{
+	width: 100%;
+	overflow: hidden;
+}
+#contentfooter {
+	clear: both;
+}
+/* Sidebar */
+#sidebar-a {
+	float: right;
+	width: 200px;
+	margin: 0 0 0 0.5em;
+	padding: 0.5em;
+	font-size: 0.9em;
+	border-left: 1px solid #666;
+}
+#sidebar-a h3 {
+	color: #CCC;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.9em;
+	margin-top: 2em;
+	margin-left: 1em;
+	border-bottom: 1px solid #CCC;
+}
+#sidebar-a p {
+	padding: 0 1em;
+}
+#sidebar-a ul {
+	list-style: none;
+	margin: 0 0 1em 1em;
+	padding: 0;
+	width: 100%;
+}
+#sidebar-a li {
+	margin-top: 0.2em;
+}
+#sidebar-a a:active, #sidebar-a a:visited, #sidebar-a a:link {
+	text-decoration: none;
+	margin-right: 0;
+	padding: 0;
+}
+#sidebar-a a:hover {
+	text-decoration: underline;
+}
+/*End Sidebar*/
+#footer {
+	clear: both;
+	padding: 0.5em 1em;
+	margin: 0;
+}
+/* --End Layout-- */
+
+
+/*
+Calendar styles
+*/
+
+.BlogCalendar
+{
+	font-size: 90%;
+	width: 100%;
+}
+
+.BlogCalendarTitle
+{
+	text-align: center;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.BlogCalendarNextPrev
+{
+}
+
+td.BlogCalendarNextPrev A:LINK, .BlogCalendarNextPrev A:ACTIVE, .BlogCalendarNextPrev A:VISITED
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.BlogCalendarNextPrev A:HOVER
+{
+	text-decoration: none;
+}
+
+.BlogCalendarDays
+{
+	font-weight: bold;
+	padding: 2px;
+}
+
+.BlogCalendarDay A:LINK, .BlogCalendarDay A:ACTIVE, .BlogCalendarDay A:VISITED, .BlogCalendarDay A:HOVER
+{
+	font-weight: bold;
+}/* -- End Calendar -- */
+
+/* -- Post -- */
+.post {
+	padding: 0;
+	margin: 0;
+}
+/* Post Header */
+.posthead {
+	margin: 0;
+	padding: 1em 0 0.5em;
+	text-align: right;
+	font-size: 0.9em;
+}
+.posthead h2 {
+	font-size: 1.1em;
+	margin: 0;
+	padding: 0.5em 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: left;
+}
+.posthead img {
+	margin: 0;
+	padding: 0 0 0 0.5em;
+	border: 0 none;
+}
+.posthead a:hover {
+	text-decoration: none;
+}
+/* Post Content  */
+.postcontent {
+	margin: 0;
+	padding: 0;
+}
+.postcontent img {
+	margin: 1em 1em 0.5em 0;
+	padding: 0;
+	line-height: 2em;
+}
+/* Post Footer */
+.postfoot {
+	font-size: 0.9em;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	margin: 1.5em 0;
+	padding: 0.5em 0;
+}
+/* Post Category Heading */
+.postcategoryheading {
+	font-size: 0.9em;
+	padding-bottom: 0.5em;
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid #666;
+}
+
+/* -- End Post -- */
+/* -- Comments -- */
+.comment
+{
+	padding: 4px;
+}
+
+.commentowner
+{
+	background-color: #444;
+	padding: 4px;
+	border: solid 1px #666;
+	margin-bottom: 3em;
+}
+
+#comments h4 {
+	margin: 0;
+	font-size: 1em;
+}
+#comments {
+	padding: 0 1em;
+	margin: 0 0 0;
+}
+.commentssubhead {
+	color: #CCC;
+	padding: 0;
+	font-size: 0.85em;
+	margin: 0.5em 0 0;
+}
+.commentspan {
+	padding-left: 0.5em;
+	text-align: right;
+	float: right;
+	width: 200px;
+}
+.commentsbody {
+	margin: 1em 0 3em;
+	padding: 0 0 0.5em;
+	font-size: 0.9em;
+	border-bottom: 1px solid #666;
+}
+/* -- End Comments --*/
+/* -- Comment and Contact Form -- */
+#commentform {
+	padding: 0;
+	margin: 0 1em;
+}
+#commentform h3 {
+	font-size: 1em;
+	margin: 0;
+	padding: 0 0 1em;
+	display: block;
+}
+#commentform dl {
+	margin: 0;
+	padding: 0;
+}
+#commentform dt {
+	font-size: 1.0em;
+	margin: 0;
+	padding: 0.5em 0.5em 0.5em 0;
+}
+#commentform dt em {
+	font-size: 0.9em;
+}
+#commentform .smallbox {
+	width: 300px;
+	padding: 2px;
+	border: 1px solid #666;
+}
+#commentform textarea {
+	width: 450px;
+	height: 180px;
+	padding: 0.2em;
+	border: 1px solid #666;
+	font: 1em Verdana, Arial, Helvetica, sans-serif;
+}
+/* -- End Comment and Contact Form -- */
+/* -- Miscellaneous -- */
+/* Email Subscriptions */
+#emailsubscriptions {
+	margin: 0;
+	padding: 1em;
+}
+#emailsubscriptions h3 {
+	font-size: 1em;
+	margin: 0 1em 0 0.5em;
+	padding: 1em 0 0;
+}
+#emailsubscriptions table {
+	font-size: 1em;
+}
+/* News */
+#news {
+	padding: 0.5em 1em;
+	margin: 1em;
+}
+
+/* Search */
+#search .searchBox {
+	width: 130px;
+	border: 1px solid #666;
+	margin: 0 1em;
+	padding: 0.2em;
+}
+#search {
+	margin-bottom: 0.5em;
+}
+/* w.bloggar uses a class called .media for its iTunes and wmp10 "now playing" plugin */
+.media {
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 1em 1em 0.5em;
+}
+/* Clearing element for floats */
+.spacer {
+	margin: 0;
+	padding: 0;
+	clear: both;
+	height: 0;
+}
+/* -- End Miscellaneous*/
+/* -- Skin button -- */
+/* This button is based upon a technique described by Mike Golding at Notestips.com:
+   http://www.notestips.com/80256B3A007F2692/1/NAMO5LV2NN */
+#skinbutton {
+	float: right;
+	margin-right: 1em;
+}
+#skinbutton ul {
+	list-style: none;
+	margin: 0 0 10px;
+	padding: 0;
+	text-align: left;
+}
+#skinbutton li {
+	border: 1px solid #999;
+	margin: 5px 0 0 20px;
+	width: 9em;
+}
+#skinbutton li a {
+	color: #333;
+	text-decoration: none;
+}
+head:first-child+body #skinbutton li {
+	padding-right: 2px;
+}
+.skinbuttonlink {
+	display: block;
+	font: 0.75em verdana, arial, sans-serif;
+	padding: 2px 0;
+	border: 1px solid white;
+	text-decoration: none;
+	width: 100%;
+	background: #ddd;
+	color: #333;
+}
+.skinbuttonlink span {
+	font: bold 1.0em verdana, arial, sans-serif;
+	padding: 2px 3px;
+	color: #fff;
+}
+.cs span {
+	background: #666;
+}
+/* --End Skinbutton -- */
+
+/* Tag Styles */
+
+.TagCloud
+{
+	background-color: #444444;
+	padding: 8px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin: 0px;
+	margin-bottom: 16px;
+	margin-top: 16px;
+	color: #999999;
+	line-height: 180%;
+	list-style-type: none;
+}
+
+.SidebarTagCloud
+{
+	font-size: 80%;
+	line-height: 200%;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.Tag1, .Tag2, .Tag3, .Tag4, .Tag5, .Tag6 
+{
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+.Tag1 a:link, .Tag1 a:visited, .Tag1 a:active
+{
+	margin-right: 6px;
+	text-decoration: none;
+	color: #A40;
+	font-size: 160%;
+	font-weight: 900;
+}
+
+.Tag2 a:link, .Tag2 a:visited, .Tag2 a:active
+{
+	margin-right: 6px;
+	text-decoration: none;
+	color: #B50;
+	font-size: 145%;
+	font-weight: 800;
+}
+
+.Tag3 a:link, .Tag3 a:visited, .Tag3 a:active
+{
+	margin-right: 6px;
+	text-decoration: none;
+	color: #C60;
+	font-size: 130%;
+	font-weight: 600;
+}
+
+.Tag4 a:link, .Tag4 a:visited, .Tag4 a:active
+{
+	margin-right: 6px;
+	text-decoration: none;
+	color: #D70;
+	font-size: 120%;
+	font-weight: 500;
+}
+
+.Tag5 a:link, .Tag5 a:visited, .Tag5 a:active
+{
+	margin-right: 6px;
+	text-decoration: none;
+	color: #E80;
+	font-size: 110%;
+	font-weight: 300;
+}
+
+.Tag6 a:link, .Tag6 a:visited, .Tag6 a:active
+{
+	margin-right: 6px;
+	text-decoration: none;
+	color: #F90;
+	font-size: 100%;
+	font-weight: 200;
+}
+
+.Tag1 a:hover, .Tag2 a:hover, .Tag3 a:hover, .Tag4 a:hover, .Tag5 a:hover, .Tag6 a:hover
+{
+	text-decoration: underline;
+}
+
+.SearchStatistics
+{
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+/* Inline tag editor */
+.InlineTagEditor
+{
+	padding: 4px;
+	border: solid 1px #999999;
+	background-color: #f3f3f3;
+}
+
+.TextButton
+{
+	display: inline-table;
+	display: -moz-inline-box;
+	display: inline-block;
+	margin: 1px;
+	padding: 4px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999999;
+	border-top-color: #cccccc;
+	border-left-color: #cccccc;
+	background-color: #eeeeee;
+	color: #333333;
+	font-family: Tahoma, Arial, Helvetica;
+	font-size: 80%;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.TextButton:LINK
+{
+	text-decoration: none;
+	color: #333333;
+	background-color: #eeeeee;
+}
+
+.TextButton:VISITED
+{
+	text-decoration: none;
+	color: #333333;
+	background-color: #eeeeee;
+}
+
+.TextButton:ACTIVE
+{
+	text-decoration: none;
+	color: #333333;
+}
+
+.TextButton:HOVER
+{
+	text-decoration: underline;
+	color: #333333;
+	background-color: #dddddd;
+}
+
+/* Modal Styles */
+
+.ModalMask
+{
+	opacity: .4;
+	filter: alpha(opacity=40);
+	background-color: #333333;
+}
+
+.Modal
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #888888;
+	border-right-width: 3px;
+	border-right-color: #888888;
+	border-bottom-width: 3px;
+	border-bottom-color: #888888;
+	background-color: #eeeeee;
+}
+
+.ModalTitle
+{
+	font-family: Tahoma, Arial, Helvetica;
+	height: 18px;
+	font-size: 16px;
+	padding: 5px;
+	padding-bottom: 7px;
+	border-style: solid;
+	border-width: 0px;
+	border-bottom-width: 1px;
+	border-color: #cccccc;
+	background-color: #dddddd;
+	color: #000000;
+	font-weight: bold;
+	cursor: move;
+	overflow: hidden;
+	text-align: left;
+}
+
+.ModalClose
+{
+	width: 33px;
+	height: 12px;
+	background-image: url(/Themes/default/images/common/close.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+	float: right;
+}
+
+.ModalContent
+{
+	background-color: #ffffff;
+}
+
+.ModalFooter
+{
+	border-style: solid;
+	border-width: 0px;
+	border-top-width: 1px;
+	border-color: #cccccc;
+	background-color: #eeeeee;
+	padding: 2px;
+}
+
+.ModalResize
+{
+	width: 14px;
+	height: 14px;
+	background-image: url(/Themes/default/images/common/resize.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	float: right;
+	cursor: se-resize;
+}
+
+/*
+Rating Styles
+*/
+
+.CommonRateControlReadOnly
+{
+      display: inline-table;
+      display: -moz-inline-box;
+      display: inline-block;
+      background-color: #ffffff;
+      border-style: solid;
+      border-color: #999999;
+      border-width: 1px;
+      padding: 1px;
+}
+ 
+.ratemenu
+{
+      display: inline-table;
+      display: -moz-inline-box;
+      display: inline-block;
+      background-color: #eeeeee;
+      border-style: solid;
+      border-color: #999999;
+      border-width: 1px;
+      cursor: pointer;
+      padding: 1px;
+}
+ 
+.CommonRateControlActive
+{
+      display: inline-table;
+      display: -moz-inline-box;
+      display: inline-block;
+      background-color: #ffcc66;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #cc9933;
+      cursor: pointer;
+      padding: 1px;
+}
+ 
+.CommonRateControlReadOnly img, .ratemenu img, .CommonRateControlActive img
+{
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+}

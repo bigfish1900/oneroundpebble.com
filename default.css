@@ -1,0 +1,40 @@
+BODY
+{
+	text-align: left;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 10%;	
+}
+
+a:hover {
+	text-decoration : none;}
+
+H1.blogtitle
+{
+	 position: relative; 
+	 top: -50px; 
+	 left: 60px;
+}
+
+H1
+{
+	color: #FF9900;
+}
+
+P.blogdescription
+{
+	 position: relative; 
+	 top: -50px; 
+	 left: 60px;
+}
+
+IMG.blogpicture
+{
+	margin-top: -50px;
+	border-width: 0px;
+}
+
+HR
+{
+	margin-bottom:50px;
+}

@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
+RewriteBase /mattsblog/
 RewriteRule ^path/to/feed http://mjrichardson.com/feed.xml [L,R=301]
 </IfModule>
